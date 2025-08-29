@@ -1,0 +1,43 @@
+Topics & Explanations 
+
+1. Introduction to Data Warehousing
+
+A data warehouse is a central repository where data from multiple sources is stored for reporting and analysis.
+
+Example: A retail company gathers sales data from stores, online platforms, and mobile apps, then stores it in a warehouse for unified reporting.
+
+
+2. ETL (Extract, Transform, Load) Process
+
+Extract: Collect data from various sources (databases, APIs, flat files).
+
+Transform: Clean, format, and standardize the data.
+
+Load: Insert the transformed data into the warehouse.
+
+Example: A company extracts raw customer data → removes duplicates → loads it into a warehouse for insights.
+
+
+3. Star Schema & Snowflake Schema
+
+Star Schema: Central fact table (sales, revenue, etc.) linked to dimension tables (customers, products). Easy for queries.
+
+Snowflake Schema: Similar, but dimensions are normalized into multiple related tables. Saves storage but complex for queries.
+
+
+4. OLAP vs OLTP
+
+OLTP (Online Transaction Processing): Handles day-to-day transactions (banking systems, e-commerce checkout).
+
+OLAP (Online Analytical Processing): Optimized for queries and analysis (trend reports, dashboards).
+
+
+5. Case Study – Building a Simple Data Warehouse
+
+Example:
+
+Sources: Online sales data, CRM customer data.
+
+ETL: Clean + integrate data.
+
+Schema: Star schema with Sales Fact Table + Customer/Products Dimensions.
